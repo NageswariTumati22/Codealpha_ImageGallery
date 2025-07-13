@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300" alt="Image 1" onclick="openLightbox(this)">
+        <img src="https://via.placeholder.com/300" alt="Image 2" onclick="openLightbox(this)">
+        <img src="https://via.placeholder.com/300" alt="Image 3" onclick="openLightbox(this)">
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
